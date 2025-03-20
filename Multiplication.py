@@ -1,18 +1,8 @@
-def multiply(a, b):
-    return a * b
-
-def calculator():
-    print("Welcome to the Multiplication Calculator!")
+# Multiplication.py
+class Multiplication:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
     
-    try:
-        num1 = float(input("Enter the first number: "))
-        num2 = float(input("Enter the second number: "))
-        
-        result = multiply(num1, num2)
-        print(f"The result of {num1} * {num2} is: {result}")
-    
-    except ValueError:
-        print("Invalid input! Please enter numeric values.")
-
-if __name__ == "__main__":
-    calculator()
+    def multiply_numbers(self):
+        return self.a * self.b

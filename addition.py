@@ -1,9 +1,7 @@
-def add_numbers(a, b):
-    return a + b
-
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-
-result = add_numbers(num1, num2)
-
-print("Sum:", result)
+class Addition:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    
+    def add_numbers(self):
+        return self.a + self.b
